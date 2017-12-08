@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements OrderAdapterClick
 		mRecyclerView.addItemDecoration(new CustomItemDecorator(this));
 		//This is the part I was working on for the indicators, code is by someone else. Did not get enough time to
 		//finish this part
+		//Also wanted to point out, I chose to go with Recyclerview here but if Viewpager is used, these dot indicators can be
+		//achieved much easier.
 //		mRecyclerView.addItemDecoration(new LinePagerIndicatorDecoration());
 
 		PagerSnapHelper snapHelper = new PagerSnapHelper();
