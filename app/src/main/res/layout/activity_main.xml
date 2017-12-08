@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/main_bg"
+	android:orientation="vertical"
+	tools:context="dahmakan.helptest.MainActivity">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:background="@android:color/white">
+
+		<TextView
+			android:id="@+id/toolbar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/app_name"
+			android:textColor="@color/text_secondary"
+			android:textSize="18sp"/>
+
+	</android.support.v7.widget.Toolbar>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/help_screen_recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+
+	<TextView
+		android:id="@+id/help_screen_error_View"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="@dimen/main_padding"
+		android:text="@string/orders_delivery_error_text"
+		android:textColor="@color/colorPrimary"
+		android:textSize="16sp"
+		android:visibility="gone"
+		/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/main_padding_half"
+		android:layout_marginLeft="@dimen/main_padding"
+		android:layout_marginRight="@dimen/main_padding"
+		android:layout_marginTop="@dimen/main_padding"
+		android:background="@drawable/bordered_bg">
+
+		<TextView
+			android:id="@+id/help_center_title_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/main_padding_min"
+			android:paddingLeft="@dimen/main_padding"
+			android:paddingRight="@dimen/main_padding"
+			android:paddingTop="@dimen/main_padding"
+			android:text="@string/help_center_title"
+			android:textColor="@color/yellow_palette_1"
+			android:textSize="16sp"
+			/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/help_center_title_tv"
+			android:paddingBottom="@dimen/main_padding"
+			android:paddingLeft="@dimen/main_padding"
+			android:paddingRight="@dimen/main_padding_double"
+			android:text="@string/help_center_description"
+			android:textColor="@color/text_secondary"
+			android:textSize="12sp"
+			/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:tint="@color/yellow_palette_1"
+			app:srcCompat="@drawable/ic_chevron_right"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/main_padding"
+		android:layout_marginLeft="@dimen/main_padding"
+		android:layout_marginRight="@dimen/main_padding"
+		android:layout_marginTop="@dimen/main_padding_half"
+		android:background="@drawable/bordered_bg">
+
+		<TextView
+			android:id="@+id/contact_us_title_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/main_padding_min"
+			android:paddingLeft="@dimen/main_padding"
+			android:paddingRight="@dimen/main_padding"
+			android:paddingTop="@dimen/main_padding"
+			android:text="@string/contact_us_title"
+			android:textColor="@color/purple_palette_1"
+			android:textSize="16sp"
+			/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/contact_us_title_tv"
+			android:paddingBottom="@dimen/main_padding"
+			android:paddingLeft="@dimen/main_padding"
+			android:paddingRight="@dimen/main_padding_double"
+			android:text="@string/contact_us_description"
+			android:textColor="@color/text_secondary"
+			android:textSize="12sp"
+			/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:tint="@color/purple_palette_1"
+			app:srcCompat="@drawable/ic_chevron_right"/>
+	</RelativeLayout>
+
+</LinearLayout>

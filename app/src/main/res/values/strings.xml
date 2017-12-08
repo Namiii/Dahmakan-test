@@ -1,0 +1,12 @@
+<resources>
+	<string name="app_name">helptest</string>
+	<string name="order_identifier">Order</string>
+	<string name="help_screen_title">Help</string>
+	<string name="order_arrival_title">Arrives at</string>
+	<string name="order_payment_method_title">Paid with</string>
+	<string name="help_center_title">Help center</string>
+	<string name="contact_us_title">Contact us</string>
+	<string name="help_center_description">Quickly find answers to your questions</string>
+	<string name="contact_us_description">Chat with customer service or leave a message</string>
+	<string name="orders_delivery_error_text">Oh no! What happened? :( tap to try again</string>
+</resources>
